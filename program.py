@@ -1,14 +1,11 @@
-player = None
-
-
-def rock(player):
+def rock():
   import random
   while True:
     choices = ["rock","paper","scissors"]
     
     computer = random.choice(choices)
+    player = None
 
-    
     while player not in choices:
         player = input("rock, paper, or scissors?: ").lower()
     
@@ -45,8 +42,8 @@ def rock(player):
             print("player:", player)
             print("You win!")
       
-        play_again = input("Play again? (yes/no): ").lower()
+  play_again = input("Play again? (yes/no): ").lower()
       
-        if play_again != "yes":
-          break
-  print("Bye")
+  if play_again != "no":
+      break
+      print("Bye")
