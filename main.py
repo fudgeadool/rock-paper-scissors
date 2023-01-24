@@ -1,4 +1,8 @@
-from program import rock
+import random
+from program import program
+
+program()
 
 
-rock()
+
+
